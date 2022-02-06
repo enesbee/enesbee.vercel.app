@@ -9,7 +9,7 @@ class MyDocument extends Document {
 
   render() {
     return (
-      <Html lang="en" className="scroll-smooth">
+      <Html lang="ko" className="scroll-smooth">
         <Head>
           <link rel="apple-touch-icon" sizes="76x76" href="/static/favicons/apple-touch-icon.png" />
           <link
@@ -34,6 +34,10 @@ class MyDocument extends Document {
             href="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css"
             integrity="sha384-Um5gpz1odJg5Z4HAmzPtgZKdTBHZdw8S29IecapCSB31ligYPhHQZMIlWLYQGVoc"
             crossOrigin="anonymous"
+          />
+          <meta
+            name="google-site-verification"
+            content="jKgtW1AmRF7ADCAwkAK-gVk7A5d_hf-ni_HSxlWJe1A"
           />
         </Head>
         <body className="bg-white text-black antialiased dark:bg-gray-900 dark:text-white">
