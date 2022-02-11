@@ -1,6 +1,6 @@
 ---
 title: 어떤게 parameter이고 어떤게 arguments 일까?
-date: '2022-02-13'
+date: '2022-02-12'
 tags: ['study', 'javascript']
 draft: false
 summary: 기억해둘만한 기초 내용들 내 식대로 정리 - parameter와 arguments의 차이
