@@ -14,7 +14,7 @@ declare global {
 }
 
 const isProduction = process.env.NODE_ENV === 'production'
-
+console.log(isProduction)
 const Analytics = () => {
   return (
     <>
