@@ -2,7 +2,7 @@
 title: 코드샌드박스 테스트
 date: '2022-02-18'
 tags: ['thoughts']
-draft: true
+draft: 'yes'
 summary: 과연 codesandbox 에서 가져온 코드들은 블로그에서 어떻게 보여질 것인가.
 ---
 

@@ -2,7 +2,7 @@
 title: ES6 부터의 자바스크립트(추가된 기능들, 보완된 기능들) - 2
 date: '2022-02-20'
 tags: ['study', 'javascript']
-draft: true
+draft: 'yes'
 summary: 전개 연산자(Spread operator), 배열 비구조화(array destructuring), 객체 비구조화(object destructuring)
 ---
 
