@@ -7,6 +7,7 @@ import { GetStaticProps, InferGetStaticPropsType } from 'next'
 import { AuthorFrontMatter } from 'types/AuthorFrontMatter'
 import { PostFrontMatter } from 'types/PostFrontMatter'
 import { Toc } from 'types/Toc'
+import Link from '@/components/Link'
 
 const DEFAULT_LAYOUT = 'PostLayout'
 
@@ -82,11 +83,17 @@ export default function Blog({
       ) : (
         <div className="mt-24 text-center">
           <PageTitle>
-            Under Construction{' '}
+            이 페이지는 공사중입니다..{' '}
             <span role="img" aria-label="roadwork sign">
               🚧
             </span>
           </PageTitle>
+          <p className="mt-4 mb-8">맥주는 역시 드래프트 맥주죠.</p>
+          <Link href="/">
+            <button className="focus:shadow-outline-blue inline rounded-lg border border-transparent bg-blue-600 px-4 py-2 text-sm font-medium leading-5 text-white shadow transition-colors duration-150 hover:bg-blue-700 focus:outline-none dark:hover:bg-blue-500">
+              메인 페이지로 돌아가기
+            </button>
+          </Link>
         </div>
       )}
     </>
