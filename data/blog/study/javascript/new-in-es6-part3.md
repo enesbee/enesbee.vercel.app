@@ -1,8 +1,8 @@
 ---
 title: ES6 부터의 자바스크립트(추가된 기능들, 보완된 기능들) - 3
-date: '2022-02-20'
+date: '2022-02-22'
 tags: ['study', 'javascript']
-draft: true
+draft: false
 summary: 프로미스(Promise)
 ---
 
@@ -14,6 +14,7 @@ summary: 프로미스(Promise)
 
 프로미스(Promise)는 비동기 상태를 값으로 다룰 수 있는 객체이다.
 프로미스를 사용하면 비동기 프로그래밍을 마치 동기 프로그래밍 처럼 코딩할 수 있다.
+프로미스는 생성과 동시에 비동기 코드가 실행이 된다.
 이전에는 콜백 패턴을 많이 사용했었는데 콜백 패턴의 문제점으로는,
 
 ```js
@@ -210,7 +211,7 @@ then 메서드를 체인으로 연결하면 각각의 비동기 처리가 병렬
 비동기 함수 간에 서로 의존성이 없다면 체인으로 연결하지 않고 병렬로 처리하는 게 더 빠르다.
 
 ```js
-requsetData1()
+requestData1()
   .then((data) => {
     console.log(data)
     return requestData2()
