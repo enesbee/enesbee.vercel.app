@@ -1,8 +1,8 @@
 const siteMetadata = {
-  title: '끄적끄적 블로그',
+  title: 'ENESBEEtilog',
   author: 'enesbee',
-  headerTitle: 'ENESBEElog',
-  description: '자바스크립트나 리액트, 그 밖에 쓰고 싶은 글',
+  headerTitle: 'ENESBEEtilog',
+  description: '배우거나 배울 것들을 기록하는 블로그',
   language: 'ko-kr',
   theme: 'system', // system, dark or light
   siteUrl: 'https://enesbee.vercel.app',
