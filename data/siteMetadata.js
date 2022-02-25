@@ -49,6 +49,8 @@ const siteMetadata = {
       theme: 'light',
       // theme when dark mode
       darkTheme: 'transparent_dark',
+      // sort the comments area in reverse order: "top" = enable / "bottom" = disable
+      position: 'top',
       // If the theme option above is set to 'custom`
       // please provide a link below to your custom theme css file.
       // example: https://giscus.app/themes/custom_example.css

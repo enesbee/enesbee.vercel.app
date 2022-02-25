@@ -30,8 +30,9 @@ const Giscus = ({ mapping }: Props) => {
     script.setAttribute('data-mapping', mapping)
     script.setAttribute('data-reactions-enabled', siteMetadata.comment.giscusConfig.reactions)
     script.setAttribute('data-emit-metadata', siteMetadata.comment.giscusConfig.metadata)
+    script.setAttribute('data-input-position', siteMetadata.comment.giscusConfig.position)
     script.setAttribute('data-theme', commentsTheme)
-    script.setAttribute('crossorigin', 'anonymous')
+    script.setAttribute('crossOrigin', 'anonymous')
     script.async = true
 
     const comments = document.getElementById(COMMENTS_ID)
