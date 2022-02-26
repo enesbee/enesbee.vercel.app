@@ -20,7 +20,7 @@ summary: async, await.
       <a href="/blog/study/javascript/new-in-es6-part3">프로미스(Promise)</a>
     </li>
     <li>
-      <a href="/blog/study/javascript/new-in-es6-part4">async, await</a>
+      <a href="/blog/study/javascript/new-in-es6-part4"><strong>async, await</strong></a>
     </li>
   </ul>
 </div>

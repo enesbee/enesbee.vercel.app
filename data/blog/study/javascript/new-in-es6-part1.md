@@ -6,6 +6,28 @@ draft: false
 summary: 자바스크립트는 ES6 이전과 이후로 나뉜다..? const와 let의 등장. 단축 속성명(shorthand property names), 계산된 속성명(computed property names)
 ---
 
+<details>
+<summary><strong>ES6 부터의 자바스크립트 시리즈</strong></summary>
+<div markdown="1">
+  <ul>
+    <li>
+      <a href="/blog/study/javascript/new-in-es6-part1"><strong>const, let. 단축 속성명, 계산된 속성명</strong></a>
+    </li>
+    <li>
+      <a href="/blog/study/javascript/new-in-es6-part2">전개 연산자, 배열 비구조화, 객체 비구조화</a>
+    </li>
+    <li>
+      <a href="/blog/study/javascript/new-in-es6-part3">프로미스(Promise)</a>
+    </li>
+    <li>
+      <a href="/blog/study/javascript/new-in-es6-part4">async, await</a>
+    </li>
+  </ul>
+</div>
+</details>
+
+---
+
 .. 랄까..?
 
 가장 먼저 작성했어야 할 포스팅인데 늦었다.

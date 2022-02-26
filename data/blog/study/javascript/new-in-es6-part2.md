@@ -6,6 +6,28 @@ draft: false
 summary: 전개 연산자(Spread operator), 배열 비구조화(array destructuring), 객체 비구조화(object destructuring)
 ---
 
+<details>
+<summary><strong>ES6 부터의 자바스크립트 시리즈</strong></summary>
+<div markdown="1">
+  <ul>
+    <li>
+      <a href="/blog/study/javascript/new-in-es6-part1">const, let. 단축 속성명, 계산된 속성명</a>
+    </li>
+    <li>
+      <a href="/blog/study/javascript/new-in-es6-part2"><strong>전개 연산자, 배열 비구조화, 객체 비구조화</strong></a>
+    </li>
+    <li>
+      <a href="/blog/study/javascript/new-in-es6-part3">프로미스(Promise)</a>
+    </li>
+    <li>
+      <a href="/blog/study/javascript/new-in-es6-part4">async, await</a>
+    </li>
+  </ul>
+</div>
+</details>
+
+---
+
 **(해당 내용은 실전 리액트 프로그래밍 책을 공부하면서 책 속에 있는 내용을 참조, 인용했습니다.)**
 
 ## 전개 연산자, 배열 비구조화, 객체 비구조화
