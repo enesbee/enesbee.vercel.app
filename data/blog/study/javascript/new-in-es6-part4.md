@@ -6,6 +6,28 @@ draft: false
 summary: async, await.
 ---
 
+<details>
+<summary><strong>ES6 부터의 자바스크립트 시리즈</strong></summary>
+<div markdown="1">
+  <ul>
+    <li>
+      <a href="/blog/study/javascript/new-in-es6-part1">const, let. 단축 속성명, 계산된 속성명</a>
+    </li>
+    <li>
+      <a href="/blog/study/javascript/new-in-es6-part2">전개 연산자, 배열 비구조화, 객체 비구조화</a>
+    </li>
+    <li>
+      <a href="/blog/study/javascript/new-in-es6-part3">프로미스(Promise)</a>
+    </li>
+    <li>
+      <a href="/blog/study/javascript/new-in-es6-part4">async, await</a>
+    </li>
+  </ul>
+</div>
+</details>
+
+---
+
 ## async, await 이해하기
 
 ### async와 await 함수는 프로미스를 반환한다.
