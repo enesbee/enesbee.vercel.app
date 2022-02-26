@@ -11,16 +11,16 @@ summary: 프로미스(Promise)
 <div markdown="1">
   <ul>
     <li>
-      <a href="/blog/study/javascript/new-in-es6-part1">const, let. 단축 속성명, 계산된 속성명</a>
+      <a class="no-underline" href="/blog/study/javascript/new-in-es6-part1">const, let. 단축 속성명, 계산된 속성명</a>
     </li>
     <li>
-      <a href="/blog/study/javascript/new-in-es6-part2">전개 연산자, 배열 비구조화, 객체 비구조화</a>
+      <a class="no-underline" href="/blog/study/javascript/new-in-es6-part2">전개 연산자, 배열 비구조화, 객체 비구조화</a>
     </li>
     <li>
-      <a href="/blog/study/javascript/new-in-es6-part3"><strong>프로미스(Promise)</strong></a>
+      <a class="no-underline" href="/blog/study/javascript/new-in-es6-part3"><strong>프로미스(Promise)</strong></a>
     </li>
     <li>
-      <a href="/blog/study/javascript/new-in-es6-part4">async, await</a>
+      <a class="no-underline" href="/blog/study/javascript/new-in-es6-part4">async, await</a>
     </li>
   </ul>
 </div>
