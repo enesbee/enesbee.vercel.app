@@ -3,7 +3,7 @@ title: BOJ 테스트 베이스
 date: '2022-04-04'
 tags: ['취미코테']
 draft: true
-summary: [draft]BOJ 테스트 베이스
+summary: draft-BOJ 테스트 베이스
 ---
 
 // 1. 하나의 값을 입력받을 때
