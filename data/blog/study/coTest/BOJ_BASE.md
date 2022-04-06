@@ -1,5 +1,5 @@
 ---
-title: [draft]베이스
+title: BOJ 테스트 베이스
 date: '2022-04-04'
 tags: ['취미코테']
 draft: true
