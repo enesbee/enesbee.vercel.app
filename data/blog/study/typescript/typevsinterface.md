@@ -65,10 +65,10 @@ interface Point {
       <td>
         <p>인터페이스 확장하기</p>
         <code><pre>
-interface Animal {
+interface Animal \{
   name: string
 }<br/>
-interface Bear extends Animal {
+interface Bear extends Animal \{
   honey: boolean
 }<br/>
 const bear = getBear() 
@@ -79,10 +79,10 @@ bear.honey
       <td>
         <p>교집합을 통하여 타입 확장하기</p>
         <code><pre>
-type Animal = {
+type Animal = \{
   name: string
 }<br/>
-type Bear = Animal & { 
+type Bear = Animal & \{ 
   honey: Boolean 
 }<br/>
 const bear = getBear();
@@ -95,10 +95,10 @@ bear.honey;
       <td>
         <p>기존의 인터페이스에 새 필드를 추가하기</p>
         <code><pre>
-interface Window {
+interface Window \{
   title: string
 }<br/>
-interface Window {
+interface Window \{
   ts: TypeScriptAPI
 }<br/>
 const src = 'const a = "Hello World"';
@@ -108,10 +108,10 @@ window.ts.transpileModule(src, {});
       <td>
         <p>타입은 생성된 뒤에는 달라질 수 없다</p>
         <code><pre>
-type Window = {
+type Window = \{
   title: string
 }<br/>
-type Window = {
+type Window = \{
   ts: TypeScriptAPI
 }<br/>
 <span style="color: #A31515"> // Error: Duplicate identifier 'Window'.</span><br/>
