@@ -1,7 +1,7 @@
 const siteMetadata = {
   title: 'ENESBEEtilog',
   author: 'enesbee',
-  headerTitle: 'ENESBEEtilog',
+  headerTitle: 'tilog',
   description: '배우거나 배울 것들을 기록하는 블로그',
   language: 'ko-kr',
   theme: 'system', // system, dark or light
