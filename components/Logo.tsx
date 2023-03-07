@@ -3,7 +3,7 @@ import { useTheme } from 'next-themes'
 
 const Logo = () => {
   const [mounted, setMounted] = useState(false)
-  const { theme, _, resolvedTheme } = useTheme()
+  const { theme, setTheme, resolvedTheme } = useTheme()
 
   // When mounted on client, now we can show the UI
   useEffect(() => setMounted(true), [])
