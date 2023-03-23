@@ -1,7 +1,7 @@
 const siteMetadata = {
-  title: 'ENESBEEtilog',
+  title: 'ENESBEElog',
   author: 'enesbee',
-  headerTitle: 'tilog',
+  headerTitle: 'log',
   description: '배우거나 배울 것들을 기록하는 블로그',
   language: 'ko-kr',
   theme: 'system', // system, dark or light
@@ -10,10 +10,10 @@ const siteMetadata = {
   siteLogo: '/static/images/logo.png',
   image: '/static/images/avatar.png',
   socialBanner: '/static/images/twitter-card.png',
-  email: 'revere.enesbee@gmail.com',
+  email: 'enesbee.dev@gmail.com',
   github: 'https://github.com/enesbee',
-  // twitter: 'https://twitter.com/Twitter',
-  facebook: 'https://facebook.com/enesbee.nam',
+  twitter: 'https://twitter.com/enesbee_dev',
+  // facebook: 'https://facebook.com/enesbee.nam',
   // youtube: 'https://youtube.com',
   linkedin: 'https://www.linkedin.com/in/enesbee',
   locale: 'ko-KR',
