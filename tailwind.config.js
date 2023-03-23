@@ -56,7 +56,8 @@ module.exports = {
               color: theme('colors.gray.900'),
             },
             pre: {
-              backgroundColor: theme('colors.gray.800'),
+              // backgroundColor: theme('colors.gray.800'),
+              backgroundColor: 'rgb(30, 30, 63)',
             },
             code: {
               color: theme('colors.pink.500'),
@@ -124,10 +125,12 @@ module.exports = {
               color: theme('colors.gray.100'),
             },
             pre: {
-              backgroundColor: theme('colors.gray.800'),
+              // backgroundColor: theme('colors.gray.800'),
+              backgroundColor: 'rgb(30, 30, 63)',
             },
             code: {
-              backgroundColor: theme('colors.gray.800'),
+              // backgroundColor: theme('colors.gray.800'),
+              backgroundColor: theme('transparent'),
             },
             details: {
               backgroundColor: theme('colors.gray.800'),

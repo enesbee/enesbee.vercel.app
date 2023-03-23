@@ -1,5 +1,5 @@
 import '@/css/tailwind.css'
-import '@/css/prism.css'
+import '@/css/prism-shades-of-purple.css'
 
 import '@fontsource/inter/variable-full.css'
 
