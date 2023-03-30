@@ -33,7 +33,8 @@ interface Props {
 }
 
 export default function PostLayout({ frontMatter, authorDetails, next, prev, children }: Props) {
-  const { slug, fileName, date, title, tags } = frontMatter
+  // const { slug, fileName, date, title, tags } = frontMatter
+  const { slug, date, title, tags } = frontMatter
 
   return (
     <SectionContainer>
