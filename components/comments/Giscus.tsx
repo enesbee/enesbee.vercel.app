@@ -12,7 +12,7 @@ const Giscus = ({ mapping }: Props) => {
   const { theme, resolvedTheme } = useTheme()
   const commentsTheme =
     siteMetadata.comment.giscusConfig.themeURL === ''
-      ? theme === 'dark' || resolvedTheme === 'dark'
+      ? theme === 'light' || resolvedTheme === 'dark'
         ? siteMetadata.comment.giscusConfig.darkTheme
         : siteMetadata.comment.giscusConfig.theme
       : siteMetadata.comment.giscusConfig.themeURL
@@ -46,8 +46,9 @@ const Giscus = ({ mapping }: Props) => {
 
   // Reload on theme change
   useEffect(() => {
-    const iframe = document.querySelector('iframe.giscus-frame')
+    const iframe = document.querySelector('iframe.giscus-frame') as HTMLIFrameElement
     if (!iframe) return
+
     LoadComments()
   }, [LoadComments])
 
