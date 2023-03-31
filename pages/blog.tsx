@@ -1,10 +1,9 @@
-import dynamic from 'next/dynamic'
 import { getAllFilesFrontMatter } from '@/lib/mdx'
 import siteMetadata from '@/data/siteMetadata'
 import { PageSEO } from '@/components/SEO'
 import { GetStaticProps, InferGetStaticPropsType } from 'next'
 import { ComponentProps } from 'react'
-const ListLayout = dynamic(() => import('@/layouts/ListLayout'))
+import ListLayout from '@/layouts/ListLayout'
 
 export const POSTS_PER_PAGE = 5
 

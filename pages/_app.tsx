@@ -1,14 +1,12 @@
 import '@/css/tailwind.css'
 import '@/css/prism-shades-of-purple.css'
-
+import Analytics from '@/components/analytics'
+import LayoutWrapper from '@/components/LayoutWrapper'
 import { ThemeProvider } from 'next-themes'
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
-import dynamic from 'next/dynamic'
 
 import siteMetadata from '@/data/siteMetadata'
-const Analytics = dynamic(() => import('@/components/analytics'))
-const LayoutWrapper = dynamic(() => import('@/components/LayoutWrapper'))
 import { ClientReload } from '@/components/ClientReload'
 
 const isDevelopment = process.env.NODE_ENV === 'development'
