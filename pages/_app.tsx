@@ -6,8 +6,6 @@ import type { AppProps } from 'next/app'
 import Head from 'next/head'
 import dynamic from 'next/dynamic'
 
-import { Inter } from 'next/font/google'
-
 import siteMetadata from '@/data/siteMetadata'
 const Analytics = dynamic(() => import('@/components/analytics'))
 const LayoutWrapper = dynamic(() => import('@/components/LayoutWrapper'))
@@ -16,7 +14,6 @@ import { ClientReload } from '@/components/ClientReload'
 const isDevelopment = process.env.NODE_ENV === 'development'
 const isSocket = process.env.SOCKET
 
-const inter = Inter({ subsets: ['latin'] })
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <ThemeProvider attribute="class" defaultTheme={siteMetadata.theme}>
@@ -26,9 +23,7 @@ export default function App({ Component, pageProps }: AppProps) {
       {isDevelopment && isSocket && <ClientReload />}
       <Analytics />
       <LayoutWrapper>
-        <div className={`${inter.className}`}>
-          <Component {...pageProps} />
-        </div>
+        <Component {...pageProps} />
       </LayoutWrapper>
     </ThemeProvider>
   )
