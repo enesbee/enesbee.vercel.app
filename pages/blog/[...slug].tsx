@@ -81,19 +81,25 @@ export default function Blog({
           next={next}
         />
       ) : (
-        <div className="mt-24 text-center">
-          <PageTitle>
-            이 페이지는 공사중입니다..{' '}
-            <span role="img" aria-label="roadwork sign">
-              🚧
-            </span>
-          </PageTitle>
-          <p className="mt-4 mb-8">맥주는 역시 드래프트 맥주죠.</p>
-          <Link href="/">
-            <button className="focus:shadow-outline-blue inline rounded-lg border border-transparent bg-blue-600 px-4 py-2 text-sm font-medium leading-5 text-white shadow transition-colors duration-150 hover:bg-blue-700 focus:outline-none dark:hover:bg-blue-500">
-              메인 페이지로 돌아가기
-            </button>
-          </Link>
+        <div className="flex flex-col items-start justify-start md:mt-24 md:flex-row md:items-center md:justify-center md:space-x-6">
+          <div className="space-x-2 pt-6 pb-8 md:space-y-5">
+            <h1 className="text-6xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 md:border-r-2 md:px-6 md:text-8xl md:leading-14">
+              <span role="img" aria-label="roadwork sign">
+                🚧
+              </span>
+            </h1>
+          </div>
+          <div className="max-w-md">
+            <p className="mb-4 text-xl font-bold leading-normal md:text-2xl">
+              이 페이지는 공사중입니다..
+            </p>
+            <p className="mb-8">게시글이 지워졌을 수도 있고요..</p>
+            <Link href="/">
+              <button className="inline rounded-lg border border-transparent bg-primary-600 px-4 py-2 text-sm font-medium leading-5 text-white shadow transition-colors duration-150 hover:bg-primary-500 focus:outline-none dark:hover:bg-primary-300">
+                메인 페이지로 돌아가기
+              </button>
+            </Link>
+          </div>
         </div>
       )}
     </>
