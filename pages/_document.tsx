@@ -3,16 +3,16 @@ import Document, {
   Head,
   Main,
   NextScript,
-  // DocumentContext,
-  // DocumentInitialProps,
+  DocumentContext,
+  DocumentInitialProps,
 } from 'next/document'
 
 class MyDocument extends Document {
-  // static async getInitialProps(ctx: DocumentContext): Promise<DocumentInitialProps> {
-  //   const initialProps = await Document.getInitialProps(ctx)
+  static async getInitialProps(ctx: DocumentContext): Promise<DocumentInitialProps> {
+    const initialProps = await Document.getInitialProps(ctx)
 
-  //   return initialProps
-  // }
+    return initialProps
+  }
 
   render() {
     return (

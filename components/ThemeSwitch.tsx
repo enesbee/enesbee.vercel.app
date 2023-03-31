@@ -7,7 +7,9 @@ const ThemeSwitch = () => {
 
   // When mounted on client, now we can show the UI
   useEffect(() => setMounted(true), [])
-
+  if (!mounted) {
+    return null
+  }
   return (
     <button
       aria-label="Toggle Dark Mode"
