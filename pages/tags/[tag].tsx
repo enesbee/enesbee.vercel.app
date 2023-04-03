@@ -1,6 +1,5 @@
 import { TagSEO } from '@/components/SEO'
 import siteMetadata from '@/data/siteMetadata'
-import ListLayout from '@/layouts/ListLayout'
 import generateRss from '@/lib/generate-rss'
 import { getAllFilesFrontMatter } from '@/lib/mdx'
 import { getAllTags } from '@/lib/tags'
@@ -9,6 +8,7 @@ import fs from 'fs'
 import { GetStaticProps, InferGetStaticPropsType } from 'next'
 import path from 'path'
 import { PostFrontMatter } from 'types/PostFrontMatter'
+import ListLayout from '@/layouts/ListLayout'
 
 const root = process.cwd()
 

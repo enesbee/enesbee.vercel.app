@@ -3,7 +3,6 @@ import { useTheme } from 'next-themes'
 
 const Logo = () => {
   const [mounted, setMounted] = useState(false)
-  // const { theme, setTheme, resolvedTheme } = useTheme()
   const { theme, resolvedTheme } = useTheme()
 
   // When mounted on client, now we can show the UI
@@ -451,9 +450,3 @@ m1017 -40 c66 -76 65 -69 65 -494 0 -381 0 -385 -23 -428 -12 -23 -26 -42 -30
 }
 
 export default Logo
-
-{
-  /* <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
- width="993.000000pt" height="196.000000pt" viewBox="0 0 993.000000 196.000000"
- preserveAspectRatio="xMidYMid meet"> */
-}
