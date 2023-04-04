@@ -1,6 +1,15 @@
 const withBundleAnalyzer = require('@next/bundle-analyzer')({
   enabled: process.env.ANALYZE === 'true',
 })
+const withMDX = require('@next/mdx')({
+  extension: /\.mdx?$/,
+  options: {
+    remarkPlugins: [],
+    rehypePlugins: [],
+    // If you use `MDXProvider`, uncomment the following line.
+    // providerImportSource: "@mdx-js/react",
+  },
+})
 
 // You might need to insert additional domains in script-src if you are using external services
 const ContentSecurityPolicy = `
@@ -52,16 +61,17 @@ const securityHeaders = [
   },
 ]
 
-// /**
-//  * @type {import('next/dist/next-server/server/config').NextConfig}
-//  **/
-
 /** @type {import('next').NextConfig} */
-module.exports = withBundleAnalyzer({
+const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   compress: true,
   pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
+  experimental: {
+    appDir: false,
+    mdxRs: true,
+    largePageDataBytes: 128 * 100000,
+  },
   eslint: {
     dirs: ['pages', 'components', 'lib', 'layouts', 'scripts'],
   },
@@ -73,7 +83,7 @@ module.exports = withBundleAnalyzer({
       },
     ]
   },
-  webpack: (config, { dev, isServer }) => {
+  webpack: (config) => {
     config.module.rules.push({
       test: /\.(png|jpe?g|gif|mp4)$/i,
       use: [
@@ -94,4 +104,17 @@ module.exports = withBundleAnalyzer({
 
     return config
   },
-})
+}
+
+module.exports = (phase, defaultConfig) => {
+  const plugins = [withBundleAnalyzer, withMDX]
+  const config = plugins.reduce(
+    (acc, plugin) => {
+      const update = plugin(acc)
+      return typeof update === 'function' ? update(phase, defaultConfig) : update
+    },
+    { ...nextConfig }
+  )
+
+  return config
+}
