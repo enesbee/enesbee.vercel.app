@@ -1,22 +1,16 @@
-import Link from '@/components/Link'
-import PageTitle from '@/components/PageTitle'
-import SectionContainer from '@/components/SectionContainer'
-import { BlogSEO } from '@/components/SEO'
-import Image from '@/components/Image'
-import Tag from '@/components/Tag'
+import dynamic from 'next/dynamic'
 import siteMetadata from '@/data/siteMetadata'
-import Comments from '@/components/comments'
-import ScrollTopAndComment from '@/components/ScrollTopAndComment'
 import { ReactNode } from 'react'
 import { PostFrontMatter } from 'types/PostFrontMatter'
 import { AuthorFrontMatter } from 'types/AuthorFrontMatter'
-
-// const editUrl = (fileName) => `${siteMetadata.siteRepo}/blob/master/data/blog/${fileName}`
-/* const discussUrl = (slug) =>
-  `https://mobile.twitter.com/search?q=${encodeURIComponent(
-    `${siteMetadata.siteUrl}/blog/${slug}`
-  )}` */
-
+const Image = dynamic(() => import('@/components/Image'))
+const Link = dynamic(() => import('@/components/Link'))
+const PageTitle = dynamic(() => import('@/components/PageTitle'))
+const SectionContainer = dynamic(() => import('@/components/SectionContainer'))
+const BlogSEO = dynamic(() => import('@/components/SEO').then((mod) => mod.BlogSEO))
+const Tag = dynamic(() => import('@/components/Tag'))
+const Comments = dynamic(() => import('@/components/comments'))
+const ScrollTopAndComment = dynamic(() => import('@/components/ScrollTopAndComment'))
 const postDateTemplate: Intl.DateTimeFormatOptions = {
   weekday: 'long',
   year: 'numeric',
@@ -33,7 +27,6 @@ interface Props {
 }
 
 export default function PostLayout({ frontMatter, authorDetails, next, prev, children }: Props) {
-  // const { slug, fileName, date, title, tags } = frontMatter
   const { slug, date, title, tags } = frontMatter
 
   return (
@@ -67,7 +60,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
             className="divide-y divide-gray-200 pb-8 dark:divide-gray-700 xl:grid xl:grid-cols-4 xl:gap-x-6 xl:divide-y-0"
             style={{ gridTemplateRows: 'auto 1fr' }}
           >
-            <dl className="pb-10 pt-6 xl:border-b xl:border-gray-200 xl:pt-11 xl:dark:border-gray-700">
+            {/* <dl className="pb-10 pt-6 xl:border-b xl:border-gray-200 xl:pt-11 xl:dark:border-gray-700">
               <dt className="sr-only">Authors</dt>
               <dd>
                 <ul className="flex justify-center space-x-8 sm:space-x-12 xl:block xl:space-x-0 xl:space-y-8">
@@ -101,16 +94,11 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                   ))}
                 </ul>
               </dd>
-            </dl>
+            </dl> */}
+            <div />
             <div className="divide-y divide-gray-200 dark:divide-gray-700 xl:col-span-3 xl:row-span-2 xl:pb-0">
               <div className="prose max-w-none pb-8 pt-10 dark:prose-dark">{children}</div>
-              {/* <div className="pt-6 pb-6 text-sm text-gray-700 dark:text-gray-300">
-                <Link href={discussUrl(slug)} rel="nofollow">
-                  {'Discuss on Twitter'}
-                </Link>
-                {` • `}
-                <Link href={editUrl(fileName)}>{'View on GitHub'}</Link>
-              </div> */}
+
               <Comments frontMatter={frontMatter} />
             </div>
             <footer>

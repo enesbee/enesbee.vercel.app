@@ -1,6 +1,9 @@
-import Link from './Link'
+import dynamic from 'next/dynamic'
 import siteMetadata from '@/data/siteMetadata'
-import SocialIcon from '@/components/social-icons'
+const Link = dynamic(() => import('./Link'))
+const SocialIcon = dynamic(() => import('@/components/social-icons'), {
+  ssr: false,
+})
 
 export default function Footer() {
   return (

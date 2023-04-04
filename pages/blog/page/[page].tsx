@@ -1,7 +1,8 @@
-import { PageSEO } from '@/components/SEO'
+import dynamic from 'next/dynamic'
+const PageSEO = dynamic(() => import('@/components/SEO').then((mod) => mod.PageSEO))
 import siteMetadata from '@/data/siteMetadata'
 import { getAllFilesFrontMatter } from '@/lib/mdx'
-import ListLayout from '@/layouts/ListLayout'
+const ListLayout = dynamic(() => import('@/layouts/ListLayout'))
 import { POSTS_PER_PAGE } from '../../blog'
 import { GetStaticPaths, GetStaticProps, InferGetStaticPropsType } from 'next'
 import { PostFrontMatter } from 'types/PostFrontMatter'

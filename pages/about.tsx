@@ -1,4 +1,8 @@
-import { MDXLayoutRenderer } from '@/components/MDXComponents'
+import dynamic from 'next/dynamic'
+
+const MDXLayoutRenderer = dynamic(() =>
+  import('@/components/MDXComponents').then((mod) => mod.MDXLayoutRenderer)
+)
 import { getFileBySlug } from '@/lib/mdx'
 import { GetStaticProps, InferGetStaticPropsType } from 'next'
 import { AuthorFrontMatter } from 'types/AuthorFrontMatter'

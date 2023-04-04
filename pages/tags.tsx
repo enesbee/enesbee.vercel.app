@@ -1,6 +1,6 @@
 import dynamic from 'next/dynamic'
-import Link from '@/components/Link'
-import { PageSEO } from '@/components/SEO'
+const Link = dynamic(() => import('@/components/Link'))
+const PageSEO = dynamic(() => import('@/components/SEO').then((mod) => mod.PageSEO))
 import siteMetadata from '@/data/siteMetadata'
 import { getAllTags } from '@/lib/tags'
 import kebabCase from '@/lib/utils/kebabCase'

@@ -1,4 +1,5 @@
-import { TagSEO } from '@/components/SEO'
+import dynamic from 'next/dynamic'
+const TagSEO = dynamic(() => import('@/components/SEO').then((mod) => mod.TagSEO))
 import siteMetadata from '@/data/siteMetadata'
 import generateRss from '@/lib/generate-rss'
 import { getAllFilesFrontMatter } from '@/lib/mdx'
@@ -8,7 +9,7 @@ import fs from 'fs'
 import { GetStaticProps, InferGetStaticPropsType } from 'next'
 import path from 'path'
 import { PostFrontMatter } from 'types/PostFrontMatter'
-import ListLayout from '@/layouts/ListLayout'
+const ListLayout = dynamic(() => import('@/layouts/ListLayout'))
 
 const root = process.cwd()
 

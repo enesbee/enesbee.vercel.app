@@ -1,9 +1,11 @@
-import Link from '@/components/Link'
-import Tag from '@/components/Tag'
+import dynamic from 'next/dynamic'
 import { ComponentProps, useState } from 'react'
-import Pagination from '@/components/Pagination'
+const Link = dynamic(() => import('@/components/Link'))
+const Tag = dynamic(() => import('@/components/Tag'))
+const Pagination = dynamic(() => import('@/components/Pagination'))
 import formatDate from '@/lib/utils/formatDate'
 import { PostFrontMatter } from 'types/PostFrontMatter'
+
 interface Props {
   posts: PostFrontMatter[]
   title: string

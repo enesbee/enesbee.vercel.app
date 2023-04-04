@@ -1,13 +1,16 @@
 import fs from 'fs'
 // import PageTitle from '@/components/PageTitle'
 import generateRss from '@/lib/generate-rss'
-import { MDXLayoutRenderer } from '@/components/MDXComponents'
+import dynamic from 'next/dynamic'
+const MDXLayoutRenderer = dynamic(() =>
+  import('@/components/MDXComponents').then((mod) => mod.MDXLayoutRenderer)
+)
 import { formatSlug, getAllFilesFrontMatter, getFileBySlug, getFiles } from '@/lib/mdx'
 import { GetStaticProps, InferGetStaticPropsType } from 'next'
 import { AuthorFrontMatter } from 'types/AuthorFrontMatter'
 import { PostFrontMatter } from 'types/PostFrontMatter'
 import { Toc } from 'types/Toc'
-import Link from '@/components/Link'
+const Link = dynamic(() => import('@/components/Link'))
 
 const DEFAULT_LAYOUT = 'PostLayout'
 

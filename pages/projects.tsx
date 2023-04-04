@@ -1,7 +1,8 @@
+import dynamic from 'next/dynamic'
 import siteMetadata from '@/data/siteMetadata'
 import projectsData from '@/data/projectsData'
-import Card from '@/components/Card'
-import { PageSEO } from '@/components/SEO'
+const Card = dynamic(() => import('@/components/Card'))
+const PageSEO = dynamic(() => import('@/components/SEO').then((mod) => mod.PageSEO))
 
 export default function Projects() {
   return (

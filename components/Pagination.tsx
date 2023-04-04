@@ -1,4 +1,5 @@
-import Link from '@/components/Link'
+import dynamic from 'next/dynamic'
+const Link = dynamic(() => import('@/components/Link'))
 
 interface Props {
   totalPages: number

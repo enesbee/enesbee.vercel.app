@@ -1,13 +1,14 @@
-import Link from '@/components/Link'
-import PageTitle from '@/components/PageTitle'
-import SectionContainer from '@/components/SectionContainer'
-import { BlogSEO } from '@/components/SEO'
+import dynamic from 'next/dynamic'
 import siteMetadata from '@/data/siteMetadata'
 import formatDate from '@/lib/utils/formatDate'
-import Comments from '@/components/comments'
-import ScrollTopAndComment from '@/components/ScrollTopAndComment'
 import { ReactNode } from 'react'
 import { PostFrontMatter } from 'types/PostFrontMatter'
+const Link = dynamic(() => import('@/components/Link'))
+const PageTitle = dynamic(() => import('@/components/PageTitle'))
+const SectionContainer = dynamic(() => import('@/components/SectionContainer'))
+const BlogSEO = dynamic(() => import('@/components/SEO').then((mod) => mod.BlogSEO))
+const Comments = dynamic(() => import('@/components/comments'))
+const ScrollTopAndComment = dynamic(() => import('@/components/ScrollTopAndComment'))
 
 interface Props {
   frontMatter: PostFrontMatter

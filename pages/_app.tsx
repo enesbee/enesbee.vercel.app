@@ -1,7 +1,8 @@
 import '@/css/tailwind.css'
 import '@/css/prism-shades-of-purple.css'
-import Analytics from '@/components/analytics'
-import LayoutWrapper from '@/components/LayoutWrapper'
+import dynamic from 'next/dynamic'
+const Analytics = dynamic(() => import('@/components/analytics'))
+const LayoutWrapper = dynamic(() => import('@/components/LayoutWrapper'))
 import { ThemeProvider } from 'next-themes'
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
