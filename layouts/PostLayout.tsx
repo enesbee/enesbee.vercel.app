@@ -3,7 +3,6 @@ import siteMetadata from '@/data/siteMetadata'
 import { ReactNode } from 'react'
 import { PostFrontMatter } from 'types/PostFrontMatter'
 import { AuthorFrontMatter } from 'types/AuthorFrontMatter'
-const Image = dynamic(() => import('@/components/Image'))
 const Link = dynamic(() => import('@/components/Link'))
 const PageTitle = dynamic(() => import('@/components/PageTitle'))
 const SectionContainer = dynamic(() => import('@/components/SectionContainer'))
