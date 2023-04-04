@@ -155,7 +155,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
               <div className="pt-4 xl:pt-8">
                 <Link
                   href="/blog"
-                  className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                  className="focus:shadow-outline-primary inline rounded-lg border border-primary-600 bg-transparent px-4 py-2 text-sm font-medium leading-5 text-primary-500 shadow transition-colors duration-150 hover:bg-primary-700 hover:text-white focus:outline-none dark:text-white dark:hover:bg-primary-500"
                 >
                   &larr; Back to the blog
                 </Link>
