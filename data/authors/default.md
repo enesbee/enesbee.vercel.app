@@ -4,7 +4,7 @@ avatar: /static/images/avatar.png
 occupation: Web Front-end Developer
 company: ''
 email: enesbee.dev@gmail.com
-# twitter: https://twitter.com/Twitter
+twitter: https://twitter.com/enesbee_dev
 linkedin: https://www.linkedin.com/in/enesbee
 github: https://github.com/enesbee
 ---
