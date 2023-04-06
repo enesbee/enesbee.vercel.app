@@ -13,6 +13,7 @@ const siteMetadata = {
   email: 'enesbee.dev@gmail.com',
   github: 'https://github.com/enesbee',
   twitter: 'https://twitter.com/enesbee_dev',
+  velog: 'https://velog.io/@enesbee',
   // facebook: 'https://facebook.com/enesbee.nam',
   // youtube: 'https://youtube.com',
   linkedin: 'https://www.linkedin.com/in/enesbee',
